@@ -1,0 +1,46 @@
+/* =================================================== 
+ESTILO.CSS — [PenteFino] — [Fake News & Desinformação] 
+Grupo: [
+        Cauan Victor Andrade Cavalcanti
+        Miguel Godke Silva
+] 
+Data: [25/06/2026] 
+=================================================== */ 
+/* === 1. VARIAVEIS GLOBAIS (TOKENS DE DESIGN) === */ 
+:root { --cor-primaria: #1E3A5F; 
+        --cor-secundaria: #E5E7EB;
+        --cor-terciaria: #F97316;
+        --fonte-titulo: '...', serif; 
+/* 
+ -> AZUL ESCURO: 60% DO SITE // CINZA CLARO: DEIXAR MAIS BONITO // LARANJA: APENAS QUANDO HÁ ALERTA
+ */ 
+} 
+/* === 2. RESET E BASE === */ 
+*, *::before, *::after { box-sizing: border-box; } 
+html { font-size: 1rem; } 
+
+/* === 3. TIPOGRAFIA === */ 
+
+
+/* === 4. COMPONENTES REUTILIZAVEIS === */ 
+/* botoes, cards, badges, etc. */ 
+/* === 5. CABECALHO E NAVEGACAO === */ 
+
+
+/* === 6. HERO (PAGINA HOME) === */ 
+
+/* === 7. PAGINA HOME === */ 
+
+/* === 8. PAGINA SOBRE === */ 
+
+/* === 9. PAGINA TEMA === */ 
+
+/* === 10. PAGINA MIDIA === */ 
+
+/* === 11. PAGINA CONTATO === */ 
+
+/* === 12. PAGINA EXTRA === */ 
+
+/* === 13. RODAPE === */ 
+
+/* === 14. RESPONSIVIDADE (MEDIA QUERIES) === */ 
