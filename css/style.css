@@ -7,10 +7,23 @@ Grupo: [
 Data: [25/06/2026] 
 =================================================== */ 
 /* === 1. VARIAVEIS GLOBAIS (TOKENS DE DESIGN) === */ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@400;700&family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root { --cor-primaria: #1E3A5F; 
         --cor-secundaria: #E5E7EB;
         --cor-terciaria: #F97316;
-        --fonte-titulo: '...', serif; 
+
+    /* Fontes */
+    --font-principal: 'Poppins', sans-serif;
+    --font-secundaria: 'Merriweather', serif;
+    --font-propaganda: 'Bebas Neue', sans-serif;
+    --font-alerta: 'Oswald', sans-serif;
+
+    /* Cores */
+    --primary-color: #1E3A5F;
+    --secondary-color: #2A9D8F;
+    --accent-color: #F97316;
+
 /* 
  -> AZUL ESCURO: 60% DO SITE // CINZA CLARO: DEIXAR MAIS BONITO // LARANJA: APENAS QUANDO HÁ ALERTA
  */ 
@@ -19,12 +32,64 @@ Data: [25/06/2026]
 *, *::before, *::after { box-sizing: border-box; } 
 html { font-size: 1rem; } 
 
-/* === 3. TIPOGRAFIA === */ 
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-principal);
+    cursor: pointer;
+}
+.importante {
+    color: var(--cor-terciaria);
+}
 
+/* === 3. TIPOGRAFIA === */ 
+h1 {
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+}
+p {
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.tituloofc {
+    font-weight: 800;
+}
 
 /* === 4. COMPONENTES REUTILIZAVEIS === */ 
+
 /* botoes, cards, badges, etc. */ 
+
 /* === 5. CABECALHO E NAVEGACAO === */ 
+header {
+    
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+nav {
+    background-color: var(--cor-primaria);
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    width: 98.5vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow:hidden;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    display: flex;
+    top: 1;
+    z-index: 1000;
+    
+}
+.barra {
+    width: 2px;
+    height: 50px;
+    background-color: var(--cor-secundaria);
+}
 
 
 /* === 6. HERO (PAGINA HOME) === */ 
