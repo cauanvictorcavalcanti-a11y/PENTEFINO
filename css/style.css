@@ -15,6 +15,7 @@ Data: [25/06/2026]
 :root { --cor-primaria: #1E3A5F; 
         --cor-secundaria: #E5E7EB;
         --cor-terciaria: #F97316;
+        --cor-de-link: #a1a4d8;
 
     /* Fontes */
     --font-principal: 'Poppins', sans-serif;
@@ -35,6 +36,11 @@ Data: [25/06/2026]
 *, *::before, *::after { box-sizing: border-box; } 
 html { font-size: 1rem; } 
 
+/* BODY */
+body {
+    background-color: var(--cor-secundaria);
+}
+
 /* LINK BASE PARA NÃO PRECISAR BOTAR HOVER TODA HORA*/
 a {
     text-decoration: none;
@@ -44,10 +50,9 @@ a {
     transition: 0.3s;
 }
 a:hover {
-    color: var(--cor-terciaria);
+    color: var(--cor-de-link);
     font-weight: bold;
     font-size: 1.1em;
-    background-color: #F97316;
 }
 
 
@@ -62,9 +67,19 @@ h1 {
     color: var(--cor-terciaria);
     font-family: var(--font-principal);
 }
+h2 {
+    margin: 0;
+    color: var(--cor-secundaria);
+}
 p {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
+}
+.subtitlehero {
+    font-family: var(--font-principal);
+    font-weight: 200;
+    color: var(--cor-terciaria);
+    
 }
 
 .tituloofc {
@@ -109,7 +124,33 @@ main {
 }
 
 
-/* === 6. HERO (PAGINA HOME) === */ 
+/* === 6. HERO (PAGINA HOME) === */
+
+.hero {
+    display: inline-block;
+    min-height: 400px;
+    background-color: var(--cor-primaria);
+    margin: 0.2px;
+    padding: 15px;
+    border-radius: 12px;
+    min-width: 1000px;
+    max-width: 1200px;
+    max-height: 800px;
+}
+
+#pedohero {
+    margin: 10px;
+}
+
+.cta {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border: var(--cor-secundaria);
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 1rem;
+    padding: 10px;
+}
 
 /* === 7. PAGINA HOME === */ 
 
