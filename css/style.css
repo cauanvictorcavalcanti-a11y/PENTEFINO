@@ -23,9 +23,9 @@ Data: [25/06/2026]
     --font-alerta: 'Oswald', sans-serif;
 
     /* Cores */
-    --primary-color: #1E3A5F;
-    --secondary-color: #2A9D8F;
-    --accent-color: #F97316;
+        --cor-primaria: #1E3A5F; 
+        --cor-secundaria: #E5E7EB;
+        --cor-terciaria: #F97316;
 
 /* 
  -> AZUL ESCURO: 60% DO SITE // CINZA CLARO: DEIXAR MAIS BONITO // LARANJA: APENAS QUANDO HÁ ALERTA
@@ -44,12 +44,10 @@ a {
     transition: 0.3s;
 }
 a:hover {
-    color: pink !important;
+    color: var(--cor-terciaria);
     font-weight: bold;
     font-size: 1.1em;
-}
-nav *:hover {
-    outline: 2px solid red;
+    background-color: #F97316;
 }
 
 
