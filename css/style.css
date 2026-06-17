@@ -3,10 +3,13 @@ ESTILO.CSS — [PenteFino] — [Fake News & Desinformação]
 Grupo: [
         Cauan Victor Andrade Cavalcanti
         Miguel Godke Silva
+        Enzo Oliveira Ricci
 ] 
 Data: [25/06/2026] 
 =================================================== */ 
 /* === 1. VARIAVEIS GLOBAIS (TOKENS DE DESIGN) === */ 
+
+/* Jeito mais facil --->>> */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@400;700&family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root { --cor-primaria: #1E3A5F; 
@@ -32,18 +35,32 @@ Data: [25/06/2026]
 *, *::before, *::after { box-sizing: border-box; } 
 html { font-size: 1rem; } 
 
+/* LINK BASE PARA NÃO PRECISAR BOTAR HOVER TODA HORA*/
 a {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--font-principal);
     cursor: pointer;
+    transition: 0.3s;
 }
+a:hover {
+    color: pink !important;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+nav *:hover {
+    outline: 2px solid red;
+}
+
+
+
 .importante {
     color: var(--cor-terciaria);
 }
 
 /* === 3. TIPOGRAFIA === */ 
 h1 {
+    margin: 0;
     color: var(--cor-terciaria);
     font-family: var(--font-principal);
 }
@@ -61,14 +78,10 @@ p {
 /* botoes, cards, badges, etc. */ 
 
 /* === 5. CABECALHO E NAVEGACAO === */ 
-header {
-    
-header {
-    
 
+    
+header {
     height: 80px;
-}
-   
 }
 nav {
     background-color: var(--cor-primaria);
