@@ -17,6 +17,7 @@ Data: [25/06/2026]
         --cor-terciaria: #F97316;
         --cor-de-link: #a1a4d8;
         --cor-primaria-escura:#042046;
+        --cor-de-cards-primaria: #284f81;
 
     /* Fontes */
     --font-principal: 'Poppins', sans-serif;
@@ -112,6 +113,8 @@ cite {
     color: white;
 }
 
+
+
 /* === 4. COMPONENTES REUTILIZAVEIS === */ 
 
 /* botoes, cards, badges, etc. */ 
@@ -172,6 +175,12 @@ nav {
     width: 70%;
     max-width: 1200px;
     max-height: 800px;
+    transition: 0.3s;
+}
+.hero:hover {
+        transform: translateY(-8px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 .hero h2 {
     margin-bottom: 20px;
@@ -288,7 +297,92 @@ nav {
     padding: 8px;
 }
 
+#citação1{
+    background:
+  linear-gradient(rgba(0, 4, 58, 0.5), rgba(0, 4, 58, 0.5)),
+  url(../imagens/galeria/Antonio-Guterres.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid var(--cor-secundaria)
+}
+#citação2{
+    background:
+  linear-gradient(rgba(0, 4, 58, 0.5), rgba(0, 4, 58, 0.5)),
+  url(../imagens/galeria/Zuckerberg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid var(--cor-secundaria)
+}
+#citação3{
+    background:
+  linear-gradient(rgba(0, 4, 58, 0.5), rgba(0, 4, 58, 0.5)),
+  url(../imagens/galeria/BoraBill.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid var(--cor-secundaria)
+}
+
 /* === 8. PAGINA SOBRE === */ 
+
+.quemsomos {
+    display: inline-block;
+    justify-content: center; 
+    flex-wrap: wrap;
+    min-height: 500px;
+    min-width: 100%;
+    background-color: var(--cor-primaria);
+    background-image: linear-gradient(var(--cor-primaria), var(--cor-primaria-escura));
+    padding: 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+.quemsomos h1 {
+    margin-bottom: 30px;
+}
+
+.quemsomosflex {
+    justify-content: center; 
+    flex-wrap: wrap;
+    min-height: 400px;
+    max-height: 500px;
+    min-width: 60%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quemsomosflex div {
+    background-color: var(--cor-de-cards-primaria);
+    background-image: radial-gradient(var(--cor-de-cards-primaria), var(--cor-primaria));
+    width: 250px;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border-bottom: 2px solid var(--cor-secundaria);
+    transition: 0.3s;
+    padding: 10px;
+    
+}
+.quemsomosflex div:hover {
+            transform: translateY(-8px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.quemsomosflex div img {
+    display: block;
+    margin-bottom: 10px;
+}
+.quemsomosflex div h2 {
+    font-weight: 200;
+    color: var(--cor-secundaria);
+}
+
+
 
 /* === 9. PAGINA TEMA === */ 
 
