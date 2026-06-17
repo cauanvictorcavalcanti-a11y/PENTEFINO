@@ -323,6 +323,14 @@ footer {
     font-size: 0.7rem;
     font-weight: 100;
 }
+.containerfooter {
+    display: flex;
+    min-height: 50px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20PX;
+}
 
 
 /* === 14. RESPONSIVIDADE (MEDIA QUERIES) === */ 
