@@ -475,7 +475,7 @@ nav {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #ff7b00;
+    background-color: var(--cor-terciaria);
  } 
  
 .evento { 
@@ -483,7 +483,7 @@ nav {
     margin-bottom: 30px;
     margin-left: 50px;
       padding: 15px;
-       background-color: rgba(255,255,255,0.05);
+       background-color: var(--cor-primaria);
         border-radius: 8px; 
     
     }
@@ -495,16 +495,16 @@ nav {
     top: 18px;
     width: 15px;
     height: 15px;
-    background-color: #ff7b00; border-radius: 50%;
+    background-color: var(--cor-terciaria); border-radius: 50%;
     }
     .evento:hover {
     transform: translateY(-12px);
 
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 15px var(--cor-primaria-escura);
     }
     .evento h3
     {
-         color: #ff7b00;
+         color: var(--cor-terciaria);
         margin-bottom: 8px; 
     }
 
