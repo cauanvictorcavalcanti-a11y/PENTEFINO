@@ -455,6 +455,58 @@ nav {
         margin: 20px 0;
         font-family: var(--font-principal);
     }
+.timeline-section 
+    {
+        padding: 40px; 
+        border-top: 4px solid var(--cor-secundaria);
+        background-image: linear-gradient(var(--cor-primaria), var(--cor-primaria-escura));
+        border-radius: 12px;
+    }
+.timeline {
+        position: relative;
+        margin: 40px auto;
+        max-width: 800px; 
+        }
+.timeline::before 
+    { 
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ff7b00;
+ } 
+ 
+.evento { 
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 50px;
+      padding: 15px;
+       background-color: rgba(255,255,255,0.05);
+        border-radius: 8px; 
+    
+    }
+.evento::before
+    {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 18px;
+    width: 15px;
+    height: 15px;
+    background-color: #ff7b00; border-radius: 50%;
+    }
+    .evento:hover {
+    transform: translateY(-12px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .evento h3
+    {
+         color: #ff7b00;
+        margin-bottom: 8px; 
+    }
 
 
 /* === 9. PAGINA TEMA === */ 
