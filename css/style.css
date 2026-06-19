@@ -38,13 +38,12 @@ Data: [25/06/2026]
 
 * {box-sizing: border-box;}
 html { font-size: 1rem; } 
-html, body {
-    overflow-x: hidden;
-}
+
 
 /* BODY */
 body {
     background-color: var(--cor-primaria-escura);
+
 }
 
 /* LINK BASE PARA NÃO PRECISAR BOTAR HOVER TODA HORA*/
@@ -113,11 +112,67 @@ cite {
     color: white;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #0d2d5a;
+    color: white;
+}
+
+th{
+    background-color: var(--cor-primaria-escura);
+    color: white;
+    padding: 12px;
+    border: 2px solid white;
+    text-align: left;
+}
+
+td{
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even){
+    background-color: rgba(255,255,255,0.08);
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgba(255,255,255,0.02);
+}
+
+/* Hover */
+tbody tr:hover{
+    background-color: var(--cor-de-link);
+    transition: 0.3s;
+}
 
 
 /* === 4. COMPONENTES REUTILIZAVEIS === */ 
 
 /* botoes, cards, badges, etc. */ 
+
+.cards:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.cards h3 {
+    font-weight: 300;
+}
+.cards{
+    background-size: cover;
+    background-position: center;
+    background-color: var(--cor-primaria);
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--cor-primaria), var(--cor-primaria-escura));
+
+    transition: 0.3s;
+}
 
 /* === 5. CABECALHO E NAVEGACAO === */ 
 
@@ -224,26 +279,7 @@ nav {
     margin: 20px auto 0 auto;
     letter-spacing: 3px;
 }
-.cards:hover{
-    transform: translateY(-8px);
 
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-.cards h3 {
-    font-weight: 300;
-}
-.cards{
-    background-size: cover;
-    background-position: center;
-    background-color: var(--cor-primaria);
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
-    border-radius: 10px;
-    background-image: linear-gradient(var(--cor-primaria), var(--cor-primaria-escura));
-
-    transition: 0.3s;
-}
 .destaques{
     display: grid;
 
@@ -315,6 +351,8 @@ nav {
 
 /* === 8. PAGINA SOBRE === */ 
 
+
+/* quem somos */
 .quemsomos {
     display: inline-block;
     justify-content: center; 
@@ -327,9 +365,11 @@ nav {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border-bottom: 2px solid var(--cor-terciaria);
+    margin-bottom: 30px;
+
 }
 .quemsomos h1 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .quemsomosflex {
@@ -376,7 +416,45 @@ nav {
     font-weight: 600;
     font-family: var(--font-secundaria);
 }
+/*nossa missao + aside com a tabela */
 
+    .pag2 {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+
+    }
+    .nossamissao {
+        width: 70%;
+
+    }
+    .problema {
+        width: 30%;
+        background-image: radial-gradient(var(--cor-primaria-escura), var(--cor-primaria));
+        min-height: 400px;
+        border-radius: 8px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: 4px solid var(--cor-secundaria);
+        border-left: 4px solid var(--cor-secundaria);
+    }
+    .problema:hover {
+                    transform: translateY(-8px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .tabelasobre {
+        color: var(--cor-secundaria);
+    }
+    .blocksobre {
+        border-left: 5px solid var(--cor-terciaria);
+        padding-left: 15px;
+        font-style: italic;
+        margin: 20px 0;
+        font-family: var(--font-principal);
+    }
 
 
 /* === 9. PAGINA TEMA === */ 
